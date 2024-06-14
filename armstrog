@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int n,a,c,sum=0;
+	printf("aravind,192110381\n");
+	printf("enter a number:");
+	scanf("%d",&n);
+		int temp=n;
+	while(n>0)
+	{
+		a=n%10;
+		c=a*a*a;
+		n=n/10;
+		sum=sum+c;
+	}
+	if(temp==sum)
+	{
+		printf("%d is armstrong",temp);
+	}
+	else
+	{
+		printf("%d is not armstrong",temp);
+	}
+}
